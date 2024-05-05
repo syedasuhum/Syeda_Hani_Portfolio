@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Charmonman:wght@400;700&family=Jacquarda+Bastarda+9&family=Jersey+15&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&display=swap');
+header {
+  height: 100%;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+.qr_border{
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid white;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+}
+.qr_code {
+  display: grid;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.header_style{
+  font-family: "Charmonman", cursive;
+  font-size: 6rem;
+  font-weight: 600;
+}
+@media screen and (max-width:900px) {
+  .header_style{
+    font-family: "Charmonman", cursive;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+}
+.type__animation{
+  font-family: "Chakra Petch", sans-serif;
+}
+
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 5rem;
+  bottom: 1rem;
+}
+
+.header__socials::after {
+  content: '';
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+.scroll__down {
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px){
+  header {
+    height: 68vh;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}
+
+.icon-group{
+  height: 50px;
+  width: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 1s ease;
+}
+.icon-group:hover{
+  width: 175px;
+  justify-content: space-around;
+} 
+.icon-group .icon-txt{
+  width: 0;
+  overflow: hidden !important;
+
+}
+.icon-group:hover .icon-txt{
+  width: fit-content;
+  transition: width 1s ease;
+}
+.icon-group .icon-bg{
+  position: absolute;
+  clip-path: circle(50% at -110% 60%);
+}
