@@ -51,7 +51,7 @@ const Portfolio = () => {
       <a href="https://github.com/syedasuhum/Syeda_Hani_Portfolio" className="btn">
       <span style={{fontSize:"1.3rem"}}><RiCodeView  /></span> Code
       </a>
-       <a href="#" className="btn">View < FaArrowUpRightFromSquare /></a>
+       <a href="https://syeda-hani-portfolio.vercel.app/" className="btn">View < FaArrowUpRightFromSquare /></a>
       
     </div>
         </div>
