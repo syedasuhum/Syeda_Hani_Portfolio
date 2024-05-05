@@ -48,7 +48,7 @@ const Portfolio = () => {
             <li><GrReactjs/></li>
           </ul>
           <div className="cta">
-      <a href="#" className="btn">
+      <a href="https://github.com/syedasuhum/Syeda_Hani_Portfolio" className="btn">
       <span style={{fontSize:"1.3rem"}}><RiCodeView  /></span> Code
       </a>
        <a href="#" className="btn">View < FaArrowUpRightFromSquare /></a>
